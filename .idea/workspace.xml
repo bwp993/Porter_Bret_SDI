@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="491ef190-15e2-40de-a01e-ab25d92541e5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/firstFile.html" afterPath="" />
-    </list>
+    <list default="true" id="491ef190-15e2-40de-a01e-ab25d92541e5" name="Default" comment="" />
     <ignored path="Porter_Bret_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
