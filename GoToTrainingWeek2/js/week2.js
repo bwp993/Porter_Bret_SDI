@@ -30,4 +30,21 @@ var currentYear = 2015;
 var age = currentYear - yearBorn-1;
 
 //alert the user with their age
-alert(name+" you are "+age+"years old!");
+alert(name+" you are "+age+" years old!");
+console.log(name+" you are "+age+" years old!");
+
+//Figure out a future age
+var yearsMore = prompt("How many years in the future would you like to know?");
+
+console.log(yearsMore);
+
+//Future age is current age + years in the future
+//Cast the variable as a number when using +
+var futureAge = age + parseInt(yearsMore);
+
+console.log(futureAge);
+
+//Console.log and alert the final values
+console.log("In "+yearsMore+" years, you will be "+futureAge+".");
+
+alert("In "+yearsMore+" years, you will be "+futureAge+".");
