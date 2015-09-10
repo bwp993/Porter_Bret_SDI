@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="491ef190-15e2-40de-a01e-ab25d92541e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Porter_Bret_Expressions_Assignment/js/expression.js" afterPath="$PROJECT_DIR$/Porter_Bret_Expressions_Assignment/js/expression.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Porter_Bret_Expressions_Assignment/expressionAssignment.html" afterPath="$PROJECT_DIR$/Porter_Bret_Expressions_Assignment/expressionAssignment.html" />
     </list>
     <ignored path="Porter_Bret_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="expression.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Porter_Bret_Expressions_Assignment/js/expression.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5687204">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.63981044">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -337,8 +336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Porter_Bret_Expressions_Assignment/js/expression.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5687204">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.63981044">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>

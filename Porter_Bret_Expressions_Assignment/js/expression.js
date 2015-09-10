@@ -22,3 +22,7 @@ Date
  var milesPerGallon= milesTravelled/gasUsed;
  alert("On your last trip your gas mileage was "+ milesPerGallon + " miles per gallon!");
 
+//Let user know we will calculate remaining amount of miles they can travel and ask for amount of gas left.
+ alert("Now "+name+ ", let's see how many more miles you can travel on this tank of gas!");
+var gasRemaining= prompt("How many gallons of gas do you still have left?")?
+
