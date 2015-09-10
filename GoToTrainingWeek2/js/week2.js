@@ -5,4 +5,11 @@ GoTo Training Week #2
 9-9-2015
  */
 
-//alert("TEst to see if connected");
+//alert("Test to see if connected");
+
+//Create an age Calculator
+
+//Ask the use for their name
+var name = prompt("Let's figure out how old you are!\nPlease type in your name");
+//Use the variable and say Hello
+alert("Welcome "+name+"!")
