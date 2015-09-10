@@ -30,3 +30,7 @@ var gasRemaining= prompt("How many gallons of gas do you still have left?");
  var milesLeft= milesPerGallon*gasRemaining
  alert(name+", you can still travel " +milesLeft+ " miles on this tank of gas!");
 
+/* I put in 5 for the amount of gallons used and 100 miles for the amount of miles i travelled.
+ I was given 20 miles per gallon as my gas mileage. Next I put that I had 5 gallons of gas remaining
+ in my gas tank and was given that I could travel 100 more miles.
+  */
