@@ -39,7 +39,7 @@ var totalNumPears = 0
  /*"7" == 7
    "7" ===7
    Prompts always return strings!!
-   Make sure to use ===
+   Make sure to use === this means strictly equal
   */
 
  if(bowlOfFruit[0]==="pear"){
@@ -103,3 +103,28 @@ var totalNumPears = 0
  }
 
  console.log("The total number of pears in the bowl is "+pearNumber);
+
+ //Validate prompts
+
+ var name = prompt("What is your name?");
+
+ //Test to see if the variable is blank
+ if(name === ""){
+  //The user left if blank
+  //reprompt the user using the SAME variable
+  name = prompt("Please do not leave blank. \nWhat is your name?");
+ }
+
+ var num1 = prompt("Please type in a number.");
+
+ //Test to see if it is a number
+ //isNaN(item to test) - stands for is not a number
+ console.log(isNaN("cat")); //true
+ console.log((isNaN(7))); //false
+
+ if(isNaN(num1)){
+  //Reprompt the user
+  num1 = prompt("Please only use numbers. \n Type in a number.");
+ }
+
+
