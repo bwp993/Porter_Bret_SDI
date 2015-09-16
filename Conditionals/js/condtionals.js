@@ -6,15 +6,20 @@ Conditionals
 09-16-2015
  */
 
-var kidHeight = 47;
-var minHeight = 48
+var kidHeight = 44;
+var minHeight = 48;
+var wParentHeight = 45;
 
 //if the child is old enough, print to the console "you can ride!"
 //if the kid is over 48 inches in height
 if(kidHeight > minHeight){
-    //code performed if condition is true
+    //you can ride!
     console.log("You can ride the coaster!");
+}else if(kidHeight > wParentHeight){
+    //You can ride with a parent present.
+    console.log("You can ride, but only with a parent.")
 }else{
-    //code if performed if the condition is false.
-    console.log("Sorry kid, you've got some growing to do.")
+    //sorry you have growing to do
+    console.log("Sorry kid, you've got some growing to do first.")
 }
+
