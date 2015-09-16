@@ -13,7 +13,7 @@ GoToTrainingWeek3
  // Array -  variable that holds multiple variables.
  // Index # of an array always starts with 0.
 
- var bowlOfFruit = ["apples","banana","pear","peach"];
+ var bowlOfFruit = ["apples","banana","pear","peach","pear","banana","kiwi","pear","strawberry","pear"];
 
  //See whole array
  console.log(bowlOfFruit);
@@ -87,3 +87,19 @@ var totalNumPears = 0
 
 
 //For Loop Structure
+ //for(initializing a counting variable; condition to test;
+ // increment of change){code to run for each time we loop}
+
+ for(var i =0; i<bowlOfFruit.length; i++){
+  console.log("Inside the loop, i ="+i);
+  console.log(bowlOfFruit[i]);
+  //Test if the array item is a pear
+  if(bowlOfFruit[i]==="pear"){
+   console.log("Found a pear!");
+   pearNumber++;
+  }else{
+   console.log("Fruit is not a pear");
+  }
+ }
+
+ console.log("The total number of pears in the bowl is "+pearNumber);
