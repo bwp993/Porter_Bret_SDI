@@ -21,47 +21,6 @@ ConditionalsAssignment
 
 if(numPlayers === "Solo"){
  alert("Very brave "+nameOne+" ! You must be very strong!");
-}
- //Get info about player two.
-if(numPlayers === "Duo"){
- var nameTwo = prompt("Very well then, What is your partners name?");
- var playerTwoHP = prompt("How many hitpoints does "+nameTwo+ " have?");
- var playerTwoDamage = prompt("How much damage per round does "+nameTwo+ " deal?");
- var playerOneHP = prompt("How many hitpoints do you have " + nameOne+"?");
- var playerOneDamage = prompt("How much damage do you deal each round " + nameOne+"?");
-
-//Get info about the boss
- var bossHP = prompt("How many hit points does the next boss have?")
- if(bossHP === ""){
-  prompt("In order to tell you how many rounds you will need to defeat the boss \nI must know how many hitpoints the boss has." +
-      "\n Enter them below");
- }
- var bossDamage = prompt("How much damage does the boss deal each round?");
- //Calculate how many rounds both can survive.
-
- var totalPlayerHP = playerOneHP + playerTwoHP
-
- var totalRoundsSurvivable = totalPlayerHP / bossDamage
-//Alert user of the number of rounds they can survive.
- alert("Allow me to do some calculations.");
-
- alert("You will be able to survive" +totalRoundsSurvivable+ " rounds against this boss.");
- //Alert how many rounds it will take to defeat the boss.
- var damagePerRound = playerOneDamage + playerTwoDamage
- var roundsToWin = bossHP / damagePerRound
-
- alert("You will be able to defeat the boss in "+roundsToWin+ " rounds!");
-
- //Alert if they will be victorious
- if(roundsToWin < totalRoundsSurvivable){
-  prompt("This means... \nYOU WILL BE VICTORIOUS!");
- }else{
-  prompt("This means... \nYou will be DEFEATED.");
- }
-
-}
-
-
  //Get info about player one.
 
  var playerOneHP1 = prompt("How many hitpoints do you have " + nameOne+"?");
@@ -79,10 +38,50 @@ if(numPlayers === "Duo"){
 
  //Calculate how many rounds players can survive per round.
 
- var totalPlayerHP = playerOneHP + playerTwoHP
-
- var totalRoundsSurvivable = totalPlayerHP / bossDamage
+ var totalRoundsSurvivable1 = totalPlayerHP / bossDamage
 //Alert user of the number of rounds they can survive.
  alert("Allow me to do some calculations.");
 
  alert("You will be able to survive" +totalRoundsSurvivable+ " rounds against this boss.");
+
+}
+ //Get info about player two.
+if(numPlayers === "Duo"){
+ var nameTwo = prompt("Very well then, What is your partners name?");
+ var playerTwoHP = prompt("How many hitpoints does "+nameTwo+ " have?");
+ var playerTwoDamage = prompt("How much damage per round does "+nameTwo+ " deal?");
+ var playerOneHP = prompt("How many hitpoints do you have " + nameOne+"?");
+ var playerOneDamage = prompt("How much damage do you deal each round " + nameOne+"?");
+
+//Get info about the boss
+ var bossHP = prompt("How many hit points does the next boss have?");
+ if(bossHP === ""){
+  prompt("In order to tell you how many rounds you will need to defeat the boss \nI must know how many hitpoints the boss has." +
+      "\n Enter them below");
+ }
+ var bossDamage = prompt("How much damage does the boss deal each round?");
+ //Calculate how many rounds both can survive.
+
+ var totalPlayerHP = parseInt(playerOneHP)+parseInt(playerTwoHP);
+ //checking to make sure totalhp is correct.
+ //alert(totalPlayerHP)
+
+ var totalRoundsSurvivable = parseInt(totalPlayerHP)/parseInt(bossDamage);
+//Alert user of the number of rounds they can survive.
+ alert("Allow me to do some calculations.");
+
+ alert("You will be able to survive" +totalRoundsSurvivable+ " rounds against this boss.");
+ //Alert how many rounds it will take to defeat the boss.
+ var damagePerRound = parseInt(playerOneDamage) + parseInt(playerTwoDamage);
+ var roundsToWin = bossHP/damagePerRound;
+
+ alert("You will be able to defeat the boss in "+roundsToWin+ " rounds!");
+
+ //Alert if they will be victorious or not.
+ if(roundsToWin < totalRoundsSurvivable){
+  prompt("This means... \nYOU WILL BE VICTORIOUS!");
+ }else{
+  prompt("This means... \nYou will be DEFEATED.");
+ }
+
+}
