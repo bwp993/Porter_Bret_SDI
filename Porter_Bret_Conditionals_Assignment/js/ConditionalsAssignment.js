@@ -22,19 +22,15 @@ ConditionalsAssignment
 if(numPlayers === "Solo"){
  alert("Very brave "+nameOne+" ! You must be very strong!");
 }
+ //Get info about player two.
 if(numPlayers === "Duo"){
  var nameTwo = prompt("Very well then, What is your partners name?");
-
+ var playerTwoHP = prompt("How many hitpoints does "+nameTwo+ " have?");
+ var playerTwoDamage = prompt("How much damage per round does "+nameTwo+ " deal?");
 }
 
-//Find out the hit points of the boss they are facing
+ //Get info about player one.
 
- var bossHP = prompt("How many hit points does the next boss have?")
- if(bossHP === ""){
-  prompt("In order to tell you how many rounds you will survive "+nameOne+ ",\nI must know how many hitpoints the boss has." +
-      "\n Enter them below");
- }
+ var playerOneHP = prompt("How many hitpoints do you have " + nameOne+"?");
+ var playerTwoDamage = prompt("How much damage per round do you deal " + nameOne+ "?");
 
- //Find out how much hp the user has alone.
-
- var onePlayerDamage = prompt("How many hitpoints do you have" + nameOne+"?");
