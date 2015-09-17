@@ -38,14 +38,23 @@ if(numPlayers === "Solo"){
 
  //Calculate how many rounds players can survive per round.
 
- var totalRoundsSurvivable1 = totalPlayerHP / bossDamage
+ var totalRoundsSurvivable1 = playerOneHP1 / bossDamage1
 //Alert user of the number of rounds they can survive.
  alert("Allow me to do some calculations.");
 
- alert("You will be able to survive" +totalRoundsSurvivable+ " rounds against this boss.");
+ alert("You will be able to survive " +totalRoundsSurvivable1+ " rounds against this boss.");
+ //Alert how many rounds it will take them to defeat the boss.
+ var roundsToWin1 = bossHP1 / playerOneDamage1
+ alert("You will be able to defeat the boss in "+roundsToWin1+" rounds!");
+ //Alert if they are victorious or not.
+ if(roundsToWin1 < totalRoundsSurvivable1){
+  alert("This means... \nYOU ARE VICTORIOUS!!")
+ }else{
+  alert("This means... \nYou are DEFEATED.")
+ }
 
 }
- //Get info about player two.
+ //Get info about two player fight.
 if(numPlayers === "Duo"){
  var nameTwo = prompt("Very well then, What is your partners name?");
  var playerTwoHP = prompt("How many hitpoints does "+nameTwo+ " have?");
@@ -70,7 +79,7 @@ if(numPlayers === "Duo"){
 //Alert user of the number of rounds they can survive.
  alert("Allow me to do some calculations.");
 
- alert("You will be able to survive" +totalRoundsSurvivable+ " rounds against this boss.");
+ alert("You will be able to survive " +totalRoundsSurvivable+ " rounds against this boss.");
  //Alert how many rounds it will take to defeat the boss.
  var damagePerRound = parseInt(playerOneDamage) + parseInt(playerTwoDamage);
  var roundsToWin = bossHP/damagePerRound;
@@ -79,9 +88,9 @@ if(numPlayers === "Duo"){
 
  //Alert if they will be victorious or not.
  if(roundsToWin < totalRoundsSurvivable){
-  prompt("This means... \nYOU WILL BE VICTORIOUS!");
+  alert("This means... \nYOU WILL BE VICTORIOUS!");
  }else{
-  prompt("This means... \nYou will be DEFEATED.");
+  alert("This means... \nYou will be DEFEATED.");
  }
 
 }
