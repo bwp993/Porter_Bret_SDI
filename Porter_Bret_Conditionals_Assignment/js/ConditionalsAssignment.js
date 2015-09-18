@@ -94,3 +94,14 @@ if(numPlayers === "Duo"){
  }
 
 }
+
+ /*In order to test my calculator I went through each process. First I tried out the solo calculator.
+  I said I had 900 hitpoints and did 200 damage each round and the boss had 1500 hitpoints and did
+  300 damage per round. I was given that I would survive 3 rounds and would be able to defeat the boss
+  in 7.5 rounds. This lead to me being defeated. In order to try out the duo calculator, I said my partner
+  Tom had 500 hitpoints and did 100 damage per round, whereas, I had 500 hp and did 125 damage per round.
+  The boss then had 1500 hitpoints and did 75 damage per round. This gave me the results of being
+  able to survive 13.34 rounds and being able to defeat the boss in 6.67 rounds. This lead to a
+  victory.*/
+
+ 
