@@ -36,10 +36,37 @@ dogYears(5);
 
 //Functions - Returning Values
 
-var total =  calcArea(30, 20);
+/*var total =  calcArea(30, 20);
 
  function calcArea(w, h){
   var area = w * h;
   return area; //function spitting the info out
  }
 console.log(total);
+*/
+
+//Functions - Function vs Procedure
+
+/*This is a function
+ function calcArea(width, height){
+  var area = width * height;
+  return area; //returns info
+ }
+
+//This is a procedure
+ function calcArea(width, height){
+  var area = width * height;
+  console.log(area); //no return
+ }
+*/
+
+//Functions - Anonymous Functions
+
+ var calcArea = function(width, height) { //defining function
+  var area = width * height;
+  return area;
+ }
+
+ var a = calcArea(20, 30); //invoking
+ console.log(a);
+ 
