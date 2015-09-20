@@ -6,13 +6,13 @@ Functions
 9-19-2015
  */
 
-function outptMsg(){
+/*function outptMsg(){
  console.log("Hello World");
-}
+}*/
 
 //Functions - Variable Scope
 
-var width = 5;
+/*var width = 5;
 
 function calcArea(){
  var width = 20;
@@ -21,4 +21,14 @@ function calcArea(){
  //console.log(area);
 }
 console.log(width);
-calcArea();
+calcArea(); */
+
+
+//Functions - Parameters and arguments
+
+function dogYears(age){ //parameters
+ var dogYears = age * 7;
+ console.log("Sparky is " + dogYears + " years old.");
+}
+dogYears(4); //arguments
+dogYears(5);
