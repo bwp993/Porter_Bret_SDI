@@ -24,7 +24,7 @@ console.log(width);
 calcArea(); */
 
 
-//Functions - Parameters and arguments
+/*Functions - Parameters and arguments
 
 function dogYears(age){ //parameters
  var dogYears = age * 7;
@@ -32,3 +32,14 @@ function dogYears(age){ //parameters
 }
 dogYears(4); //arguments
 dogYears(5);
+*/
+
+//Functions - Returning Values
+
+var total =  calcArea(30, 20);
+
+ function calcArea(w, h){
+  var area = w * h;
+  return area; //function spitting the info out
+ }
+console.log(total);
