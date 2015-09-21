@@ -69,4 +69,3 @@ console.log(total);
 
  var a = calcArea(20, 30); //invoking
  console.log(a);
- 
