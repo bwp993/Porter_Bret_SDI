@@ -21,9 +21,11 @@ function calcCircum(p, r){
 //Bee stings needed to kill an animal.
 
 var stingsPerPound = 8.666666667
-var animalWeight = 200
+var animalWeight = 100
 var stingsToKill = calcStings(stingsPerPound, animalWeight);
-
+console.log("It will take " +stingsToKill+ " bee stings to kill the animal.")
 function calcStings(s, a){
  return stingsPerPound * animalWeight
-} 
+}
+
+//
