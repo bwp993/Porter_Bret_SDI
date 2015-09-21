@@ -21,6 +21,14 @@ var name = prompt("Hello friend, can't figure out what type of music to listen t
 
 //Ask for artists/albums/genre/songs.
 
- alert("Let's start by picking three artists, songs, albums, or genres that you would like to choose from.");
+ alert("Alright " +name+ ", let's start by picking three artists, songs, albums, or genres that you would like to choose from.");
 
- var
+ var choiceOne = prompt("Enter your first choice.");
+ while(choiceOne===""){
+  choiceOne = prompt("Please don't leave it blank. Type in your first selection.");
+ }
+
+ var choiceTwo = prompt("Enter your second choice.");
+ while(choiceTwo===""){
+  choiceTwo = prompt("Please don't leave it blank. Type in your second selection.");
+ }
