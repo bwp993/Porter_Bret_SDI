@@ -6,13 +6,21 @@ Functions Assignment
 09-20-2015
  */
 
-/*Create a calculator to calculate the amount of space for luggage
- in a vehicle (Area of trunk) and the area of the luggage.
+/*Create a calculator that helps the user decide what type of music to listen to
 */
 
 //Prompt user for their name and make sure one is entered.
-var name = prompt("Hello friend, want to know if you have enough luggage space for your trip? \nLet's" +
-    " start with getting to know you. \nWhat's your name?");
- if(name===""){
-  prompt("Don't leave this blank, please enter your name.);
+var name = prompt("Hello friend, can't figure out what type of music to listen to?" +
+    " \nI can help with that! \nWhat's your name?");
+
+ console.log(name);
+
+ while(name===""){
+  name = prompt("Please do not leave this area blank. \nEnter your name below.");
  }
+
+//Ask for artists/albums/genre/songs.
+
+ alert("Let's start by picking three artists, songs, albums, or genres that you would like to choose from.");
+
+ var
