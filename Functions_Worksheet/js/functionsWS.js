@@ -28,4 +28,3 @@ function calcStings(s, a){
  return stingsPerPound * animalWeight
 }
 
-//
