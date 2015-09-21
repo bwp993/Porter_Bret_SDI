@@ -84,3 +84,10 @@ console.log("Your random number between " +minNum+ " and " +maxNum+ " is " +retu
   return randomNumber;
 
  }
+
+//Wanted 15 random numbers. Make a for loop
+ for(var i=0; i<15; i++){
+
+  //15 different results
+  console.log(randomizr(minNum, maxNum));
+ }
