@@ -61,3 +61,26 @@ GoToTrainingWeek4
  while(happy != "yes" && happy != "no" && happy != "maybe"){
   happy = prompt("Please only use yes, maybe or no. \nAre you happy today?");
  }
+
+ //Function call.
+ //Arguments go inside the function call.
+ //Create a variable to catch the returning value.
+var returnedValue = randomizr(minNum, maxNum);
+
+console.log("Your random number between " +minNum+ " and " +maxNum+ " is " +returnedValue)
+ //Create a function to calculate the random number.
+ /*Parameters go inside (). temporary variables that can only be accessed
+ inside the function. They catch the arguments that are thrown in. Makes the code
+ more flexable. DO NOT want to use main code variables!
+  */
+
+ function randomizr(min, max){
+
+  //generate our random number
+  var randomNumber =Math.round( Math.random()*(max-min)+Number(min));
+  //console.log(randomNumber);
+
+  //return the value to our main code
+  return randomNumber;
+
+ }
