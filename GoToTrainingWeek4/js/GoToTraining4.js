@@ -91,3 +91,19 @@ console.log("Your random number between " +minNum+ " and " +maxNum+ " is " +retu
   //15 different results
   console.log(randomizr(minNum, maxNum));
  }
+
+
+//Anonymous functions - Browser can't see this funct until it gets to it.
+
+//Create and anon function that adds 2 numbers together
+ // var functionName = function(){};
+
+ var addNums = function(num1, num2){
+  var total = num1+num2;
+  return total;
+ };
+
+ //function needs to be called; addNums needs to be called after function.
+
+ var totalReturned = addNums(5, 6);
+ console.log(totalReturned+ " is the added total.");
