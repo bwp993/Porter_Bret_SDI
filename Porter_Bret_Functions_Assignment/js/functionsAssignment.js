@@ -65,10 +65,35 @@ function randomChoice(min, max){
  }else if(finalChoice===3){
   var happy = prompt("You should listen to " +choiceThree+ "! Are you happy with this result? Enter yes or no.");
   console.log("You should listen to "+ choiceThree);
- }
-var happy = happy.toLowerCase();
-
- if(happy===""){
+  var happy = happy.toLowerCase();
+ }while(happy != "yes" && happy != "no"){
   happy = prompt("Don't leave me hanging here " +name+ ". \nAre you happy with the selection?" +
-      "Enter yes or no.");
+      "\nPlease only Enter yes or no.");
  }
+//Second chance choice.
+
+if(happy==="no") {
+ alert("Okay " + name + " let me pick another one for you.");
+
+ function secondChance(min, max) {
+  var secondNum = Math.round(Math.random() * (max - min) + min);
+  return secondNum;
+ }
+
+ var secondChoice = secondChance(1, 3);
+ console.log("The random number is " + secondChoice);
+
+ if (secondChoice === 1) {
+  var result = alert("You should listen to " + choiceOne + "!");
+  console.log("You should listen to " + choiceOne);
+ } else if (secondChoice === 2) {
+  var result = alert("You should listen to " + choiceTwo + "!");
+  console.log("You should listen to " + choiceTwo);
+ } else if (secondChoice === 3) {
+  var result = alert("You should listen to " + choiceThree + "!");
+  console.log("You should listen to " + choiceThree);
+ }
+}
+if(happy==="yes"){
+  alert("Awesome "+name+ "! Enjoy the music!");
+}
